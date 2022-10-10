@@ -22,7 +22,7 @@
     background-color: #0984e3;
     color: #fff;
     margin: 0;
-    padding: 7px 20px;
+    padding: 7px 10px;
     border-radius: 0 0 5px 5px;
     align-items: center;
 }
@@ -40,4 +40,8 @@
 .quiz-bottom button:hover {
     color: #0984e3;
     background-color: #fff;
+}
+.btn-icon {
+    width: 20px;
+    font-weight: bold;
 }

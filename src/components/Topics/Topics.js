@@ -1,5 +1,6 @@
 import React from 'react';
 import './Topics.css';
+import { ArrowRightIcon } from '@heroicons/react/24/solid';
 
 const Topics = ({topic}) => {
     const {id, name, logo, total} = topic;
@@ -12,7 +13,7 @@ const Topics = ({topic}) => {
                 <img src={logo} alt="" />
                 <div className='d-flex justify-content-between quiz-bottom'>
                     <p>Total Quiz: {total}</p>
-                    <button>Start Quiz</button>
+                    <button>Start Quiz <ArrowRightIcon className="btn-icon"/></button>
                 </div>
             </div>
         </div>
