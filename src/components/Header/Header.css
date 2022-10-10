@@ -1,0 +1,22 @@
+.header-navbar {
+    background-color: #0984e3;
+}
+.my-brand {
+    color: #fff !important;
+    font-weight: bold;
+}
+.my-nav-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 0px;
+    margin: 5px 20px;
+    transition: 0.5s;
+}
+.my-nav-link:hover {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.my-nav-link.active {
+    border-bottom: 2px solid #fff;
+}
