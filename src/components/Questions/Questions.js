@@ -3,6 +3,14 @@ import QuestionOption from '../QuestionOption/QuestionOption';
 
 const Questions = ({questions, index}) => {
     const {options, question, correctAnswer} = questions;
+    const handleCorrectAns = (answer) => {
+        if(answer === correctAnswer){
+            alert('correct');
+        }
+        else{
+            alert('Not Correct')
+        }
+    }
     return (
         <div>
             <div className="d-flex">
@@ -10,7 +18,11 @@ const Questions = ({questions, index}) => {
                 <div dangerouslySetInnerHTML={{ __html: question }}></div>
             </div>
             {
-                options.map((option, index) => <QuestionOption key={index} options={option}></QuestionOption>)
+                options.map((option, index) => <QuestionOption 
+                key={index} 
+                options={option}
+                handleCorrectAns = {handleCorrectAns}
+                ></QuestionOption>)
             }
         </div>
     );

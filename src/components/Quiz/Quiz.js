@@ -9,12 +9,10 @@ const Quiz = () => {
     console.log(questions)
     return (
         <div className='container'>
-            <div className='quiz-head'>
-                <div className='text-center'>
+            <div className='quiz-head mb-5'>
+                <div className="d-flex justify-content-center align-items-center mb-3">
                     <img src={logo} alt="" />
-                </div>
-                <div className="d-flex justify-content-center align-items-center">
-                    <h1 className='me-5'>{name}</h1>
+                    <h1 className='mx-5'>{name}</h1>
                     <p className='m-0'>Total Quiz: {total}</p>
                 </div>
             </div>

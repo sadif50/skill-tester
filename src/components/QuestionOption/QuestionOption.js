@@ -1,9 +1,9 @@
 import React from 'react';
 
-const QuestionOption = ({options}) => {
+const QuestionOption = ({options, handleCorrectAns}) => {
     return (
         <div>
-            <button type='radio'>{options}</button>
+            <button onClick={()=>handleCorrectAns(options)}>{options}</button>
         </div>
     );
 };
