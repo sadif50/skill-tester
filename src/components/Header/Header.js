@@ -18,13 +18,13 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <NavLink className="my-nav-link" to='/'>Home</NavLink>
+                                <NavLink className={`my-nav-link ${({isActive})=> isActive ? 'active' : undefined}`} to='/home'>Home</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="my-nav-link" to='/statistics'>Statistics</NavLink>
+                                <NavLink className={`my-nav-link ${({isActive})=> isActive ? 'active' : undefined}`} to='/statistics'>Statistics</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="my-nav-link" to='/blog'>Blog</NavLink>
+                                <NavLink className={`my-nav-link ${({isActive})=> isActive ? 'active' : undefined}`} to='/blog'>Blog</NavLink>
                             </li>
                         </ul>
                     </div>

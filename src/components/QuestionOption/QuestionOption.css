@@ -10,18 +10,21 @@
 .radio-icon {
     border: 1px solid #010101;
     height: 16px;
-    width: 16px;
+    width: 16px !important;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.radio-icon span{
+    width: 16px;
+}
 .quiz-option:hover .radio-icon span, .quiz-option:focus .radio-icon span {
     display: inline-block;
     border: 1px solid #0984e3;
     background-color: #0984e3;
-    height: 10px;
-    width: 10px;
+    height: 14px;
+    width: 14px;
     border-radius: 20px;
     line-height: 20px;
 }

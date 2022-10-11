@@ -1,6 +1,6 @@
 # Skills Tester
 
-Live App Link: [](https://.com).
+Live App Link: [https://rainbow-kitsune-e39cd2.netlify.app/](https://rainbow-kitsune-e39cd2.netlify.app/).
 
 ## About this app
 
@@ -11,8 +11,8 @@ Live App Link: [](https://.com).
 - You can see your test summary at the right side of your quizes.
 ## Dependency used
 
-- Bootstrap 5.2 used for css framework
-- Hero Icon used for Icons
+- Bootstrap 5.2 used for css framework.
+- Hero Icon used for Icons.
 - React Router Used for routing and data load by its loader.
 - React Tostify Used for Showing toast.
 - Rechart used for showing statistical chart.

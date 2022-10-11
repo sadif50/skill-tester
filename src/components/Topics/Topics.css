@@ -9,6 +9,7 @@
     color: #0984e3;
     margin: 0;
     padding: 5px 10px;
+    border-bottom: 1px solid rgb(210, 229, 247);
 }
 .topics-box img {
     width: 80%;

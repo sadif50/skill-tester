@@ -8,9 +8,13 @@ import { answerContext } from '../Quiz/Quiz';
 
 const Questions = ({questions, index}) => {
     const {options, question, correctAnswer} = questions;
+
+    /* Load data by useContext for Quiz Summary
+        Here is two state data and function loaded.
+    */
     const [correctAns, setCorrectAns, inCorrectAns, setInCorrectAns ] =useContext(answerContext);
     
-
+    /* Toasts for correct, incorrect or show answer.*/
     const correct = () => toast.success("Correct Answer", {
         position: "top-center",
     });
@@ -20,6 +24,8 @@ const Questions = ({questions, index}) => {
     const ShowCorrect = () => toast.info(`Correct Answer: ${correctAnswer}`, {
         position: "top-center",
     });
+
+    /** handle correct answer and set states for correct and incorrect answers */
     const handleCorrectAns = (answer) => {
         if(answer === correctAnswer){
             correct();
@@ -30,6 +36,7 @@ const Questions = ({questions, index}) => {
             setInCorrectAns(inCorrectAns + 1);
         }
     }
+    
     return (
         <div className='quiz-question'>
             <div className='d-flex justify-content-between'>

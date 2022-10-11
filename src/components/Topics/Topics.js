@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom';
 
 const Topics = ({topic}) => {
     const {id, name, logo, total} = topic;
+    
+    /* Navigate hook used for navigation */
     const navigate = useNavigate();
     const handleNavigate = () => {
         navigate(`/quiz/${id}`);

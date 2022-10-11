@@ -3,15 +3,16 @@
     border-bottom: 1px solid #ddd;
 }
 .quiz-head img {
-    width: 50px;
-    margin-right: 20px;
+    width: 40px;
+    margin-right: 5px;
     border-radius: 5px;
     background-color: rgb(233, 233, 233);
 }
 .quiz-summery {
     border-radius: 10px;
     background-color: #fff;
-    height: calc(100% - 20px);
+    /* height: calc(100% - 20px); */
     padding: 20px;
     box-shadow: 0px 0px 10px rgb(210 229 247);
+    margin-bottom: 20px;
 }
