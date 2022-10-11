@@ -8,9 +8,9 @@ const Home = () => {
     return (
         <div className='container'>
             <div className='home-banner'>
-                <div className="banner-text">
-                    <h2>
-                    You can test your skills with Skills Tester.
+                <div className="banner-text text-center px-4">
+                    <h2 className='mb-3 fw-bold'>
+                    You can test your skills with <span className='font-italic'>Skills Tester.</span>
                     </h2>
                     <p>
                         The test is not official, it's just a nice way to see how much you know about bellow topics.
