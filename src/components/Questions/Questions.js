@@ -1,15 +1,24 @@
 import React from 'react';
 import QuestionOption from '../QuestionOption/QuestionOption';
 import './Questions.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Questions = ({questions, index}) => {
     const {options, question, correctAnswer} = questions;
+
+    const correct = () => toast.success("Correct Answer", {
+        position: "top-center",
+    });
+    const inCorrect = () => toast.error("Wrong Answer", {
+        position: "top-center",
+    });
     const handleCorrectAns = (answer) => {
         if(answer === correctAnswer){
-            alert('correct');
+            correct();
         }
         else{
-            alert('Not Correct')
+            inCorrect();
         }
     }
     return (
@@ -27,6 +36,7 @@ const Questions = ({questions, index}) => {
                 ></QuestionOption>)
             }
             </div>
+            <ToastContainer />
         </div>
     );
 };

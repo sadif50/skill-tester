@@ -3,10 +3,10 @@ import './QuestionOption.css';
 
 const QuestionOption = ({options, handleCorrectAns}) => {
     return (
-        <label className='d-flex quiz-option' onClick={()=>handleCorrectAns(options)}>
-            <input type="radio" name="option" />
+        <div className='d-flex align-items-center quiz-option' onClick={()=>handleCorrectAns(options)}>
+            <p className='radio-icon m-0'><span>&nbsp;</span></p>
             <div className='ms-2'>{options}</div>
-        </label>
+        </div>
     );
 };
 
