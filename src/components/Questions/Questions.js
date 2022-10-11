@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import QuestionOption from '../QuestionOption/QuestionOption';
 import './Questions.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { EyeIcon } from '@heroicons/react/24/solid';
+import { answerContext } from '../Quiz/Quiz';
 
 const Questions = ({questions, index}) => {
     const {options, question, correctAnswer} = questions;
+    const [correctAns, setCorrectAns, inCorrectAns, setInCorrectAns ] =useContext(answerContext);
+    
 
     const correct = () => toast.success("Correct Answer", {
         position: "top-center",
@@ -20,9 +23,11 @@ const Questions = ({questions, index}) => {
     const handleCorrectAns = (answer) => {
         if(answer === correctAnswer){
             correct();
+            setCorrectAns(correctAns + 1);
         }
         else{
             inCorrect();
+            setInCorrectAns(inCorrectAns + 1);
         }
     }
     return (
