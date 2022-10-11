@@ -5,6 +5,10 @@
     color: #fff !important;
     font-weight: bold;
 }
+.my-brand span .brand-icon {
+    width: 40px; 
+    margin-right: 10px;
+}
 .my-nav-link {
     display: inline-block;
     color: #fff;
