@@ -6,7 +6,8 @@
     box-shadow: 0px 0px 10px #ddd;
 }
 .show-correct-answer {
-    width: 20px;
+    width: 25px;
+    margin-left: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
 }
